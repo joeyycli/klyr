@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>klyr — Build apps with AI</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="home-page">
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <div class="navbar-left">
+        <a href="/" class="navbar-brand">
+          <div class="logo-circles">
+            <div class="logo-outer"></div>
+            <div class="logo-inner"></div>
+          </div>
+          <span class="logo-wordmark">klyr</span>
+        </a>
+        <div class="navbar-links">
+          <span class="nav-dot">&bull;</span>
+          <a href="#how" class="nav-link">How It Works</a>
+          <span class="nav-dot">&bull;</span>
+          <a href="#features" class="nav-link">Features</a>
+          <span class="nav-dot">&bull;</span>
+          <a href="#start" class="nav-link">Get Started</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <a id="githubLink" href="https://github.com" target="_blank" class="nav-icon-btn liquid-glass" title="GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-anim"></div>
+    <div class="hero-gradient"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-heading reveal" data-delay="0">
+        Your idea.<br>
+        <em class="serif-italic">Our engine.</em>
+      </h1>
+
+      <p class="hero-subtitle reveal" data-delay="1">
+        klyr wraps Claude Code in a local web workspace with a terminal, file explorer, and live preview.
+        One command, one session, full control.
+      </p>
+
+      <div class="hero-cta reveal" data-delay="2">
+        <a href="/download/klyr.tar.gz" class="download-btn" id="downloadBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download for Mac
+        </a>
+        <span class="platform-note reveal" data-delay="3">macOS only &middot; .tar.gz &middot; Windows coming soon</span>
+      </div>
+
+      <div class="install-block reveal" data-delay="3">
+        <p class="install-label">or install from terminal</p>
+        <div class="install-command liquid-glass">
+          <span class="install-prompt">$</span>
+          <code class="install-text">curl -fsSL localhost:8000/install | bash</code>
+          <button class="install-copy" id="copyCurl" title="Copy">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== HOW IT WORKS ====== -->
+  <section class="section how-section" id="how">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">
+        Three steps to <em class="serif-italic">anything.</em>
+      </h2>
+      <p class="section-subtitle reveal" data-delay="1">
+        No setup guides. No config files. Just a terminal and an idea.
+      </p>
+
+      <div class="steps-grid">
+        <div class="step-card liquid-glass reveal" data-delay="1">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <h3 class="step-title">Run klyr</h3>
+          <p class="step-desc">Open a terminal and type <code>klyr</code>. It starts a local server, creates a workspace, and hands you a session ID.</p>
+        </div>
+        <div class="step-card liquid-glass reveal" data-delay="2">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3 class="step-title">Describe</h3>
+          <p class="step-desc">Tell Claude what to build in plain English. A portfolio, a dashboard, a full SaaS app — whatever you need.</p>
+        </div>
+        <div class="step-card liquid-glass reveal" data-delay="3">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="step-title">Ship</h3>
+          <p class="step-desc">Watch files appear in real-time. Browse the code, preview the result live, iterate until it's right.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== PHILOSOPHY ====== -->
+  <section class="section mission-section" id="mission">
+    <div class="section-inner">
+      <div class="scroll-text" id="scrollText">
+        <p class="scroll-paragraph primary" data-highlight="yours,local,free">
+          Every file stays on your machine. Every session is yours. The tools are local, the code is free, and nothing is locked behind a paywall.
+        </p>
+        <p class="scroll-paragraph secondary">
+          klyr exists because building software should feel like a conversation — not a checkout page.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FEATURES ====== -->
+  <section class="section features-section" id="features">
+    <div class="section-inner">
+      <div class="features-label reveal">UNDER THE HOOD</div>
+      <h2 class="section-heading reveal" data-delay="1">
+        Built on the <em class="serif-italic">best.</em>
+      </h2>
+
+      <div class="features-grid">
+        <div class="feature-item reveal" data-delay="1">
+          <h3>Claude Code</h3>
+          <p>The same CLI developers use daily. klyr pre-configures it as a no-code builder so it scaffolds, installs, and writes production-grade code from the start.</p>
+        </div>
+        <div class="feature-item reveal" data-delay="2">
+          <h3>Live Workspace</h3>
+          <p>A browser-based terminal, file explorer, and live preview — all connected over WebSocket. Every keystroke streams in real-time.</p>
+        </div>
+        <div class="feature-item reveal" data-delay="3">
+          <h3>Smart Defaults</h3>
+          <p>Each session starts with a system prompt combining patterns from leading AI builders — React, TypeScript, Tailwind, and shadcn/ui out of the box.</p>
+        </div>
+        <div class="feature-item reveal" data-delay="4">
+          <h3>Zero Cost</h3>
+          <p>No subscription. No credits. klyr runs on your machine with your own Claude setup. The code is open source and always will be.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CTA / GET STARTED ====== -->
+  <section class="section cta-section" id="start">
+    <div class="cta-content">
+      <div class="logo-circles lg reveal">
+        <div class="logo-outer"></div>
+        <div class="logo-inner"></div>
+      </div>
+      <h2 class="cta-heading reveal" data-delay="1">
+        Start <em class="serif-italic">building.</em>
+      </h2>
+      <p class="cta-subtitle reveal" data-delay="2">Have a session ID? Paste it below.</p>
+
+      <div class="cta-session reveal" data-delay="3">
+        <div class="session-input-row liquid-glass">
+          <span class="session-prefix">localhost:8000/</span>
+          <input type="text" id="sessionInput" placeholder="session id" spellcheck="false" autocomplete="off">
+          <button class="go-btn" id="goBtn">Go</button>
+        </div>
+      </div>
+
+      <div class="cta-divider reveal" data-delay="3"><span>or</span></div>
+
+      <div class="cta-buttons reveal" data-delay="4">
+        <button class="btn-primary" id="newSessionBtn">New Session</button>
+        <a href="/download/klyr.tar.gz" class="btn-glass liquid-glass">Download .tar.gz</a>
+      </div>
+
+      <p class="cta-platform-note reveal" data-delay="4">macOS only &middot; Windows coming soon</p>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>&copy; 2026 klyr</span>
+      <div class="footer-links">
+        <a id="footerGithub" href="https://github.com" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/home.js"></script>
+</body>
+</html>
